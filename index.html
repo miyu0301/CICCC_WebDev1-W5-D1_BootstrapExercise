@@ -18,9 +18,9 @@
   <body>
     <!-- Navbar -->
     <!-- this is so we can make it responsive -->
-    <nav class="text-bg-dark">
-      <div class="container">
-        <a href="#" class="h1">Academinyaa</a>
+    <nav class="bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="h1 text-decoration-none">Academinyaa</a>
 
         <button
           type="button"
@@ -76,21 +76,21 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="bg-warning text-white p-3">
+    <section class="bg-warning text-white py-5">
       <div class="container">
         <div class="row align-items-center">
           <h3 class="col">Sign Up For Our Mewsletter</h3>
 
-          <div class="col row">
-            <input type="text" class="form-control col" placeholder="Enter Email" />
-            <button type="button" class="btn btn-dark col">Submit</button>
+          <div class="col input-group">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button type="button" class="btn btn-dark">Submit</button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Learn Sections -->
-    <section id="learn" class="p-3">
+    <section id="learn" class="py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col">
@@ -108,15 +108,15 @@
               quae similique laboriosam iste minus placeat odit velit quos,
               nulla architecto amet voluptates?
             </p>
-            <a href="#">
-              <i></i> Read More
+            <a href="#" class="bg-light text-dark rounded text-decoration-none p-2">
+              <i>></i> Read More
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="learn" class="text-bg-dark p-3">
+    <section id="learn" class="text-bg-dark py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col">
@@ -131,8 +131,8 @@
               quae similique laboriosam iste minus placeat odit velit quos,
               nulla architecto amet voluptates?
             </p>
-            <a href="#" >
-              <i></i> Read More
+            <a href="#" class="bg-light text-dark rounded text-decoration-none p-2">
+              <i>></i> Read More
             </a>
           </div>
           <div class="col">
@@ -143,12 +143,12 @@
     </section>
 
     <!-- Question Accordion -->
-    <section id="questions" class="p-3">
+    <section id="questions" class="py-5">
       <div class="container">
-        <h2>Frequently Asked Questions</h2>
+        <h2 class="text-center">Frequently Asked Questions</h2>
         <div class="accordion" id="questions">
           <!-- Item 1 -->
-          <div>
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 type="button"
@@ -163,8 +163,7 @@
             </h2>
             <div
               id="question-one"
-              data-bs-parent="#questions"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
             >
               <div class="accordion-body">
                 Fall asleep on the washing machine hide when <code>guests</code> come over
@@ -175,7 +174,7 @@
             </div>
           </div>
           <!-- Item 2 -->
-          <div>
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 type="button"
@@ -190,8 +189,7 @@
             </h2>
             <div
               id="question-two"
-              data-bs-parent="#questions"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
             >
               <div class="accordion-body">
                 Scream at teh bath. My left donut is missing, as is my right the
@@ -203,7 +201,7 @@
             </div>
           </div>
           <!-- Item 3 -->
-          <div>
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 type="button"
@@ -218,8 +216,7 @@
             </h2>
             <div
               id="question-three"
-              data-bs-parent="#questions"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
             >
               <div class="accordion-body">
                 Be fabulous for the rest of the day – checked so poop on
@@ -233,8 +230,8 @@
       </div>
     </section>
 
-    <section id="instructors" class="bg-warning text-white p-3">
-      <div class="container">
+    <section id="instructors" class="bg-warning text-white py-5">
+      <div class="container text-center">
         <h2>Our Instructors</h2>
         <p>
           Our instructors all have 5+ years pooping on grasses while licking
@@ -243,68 +240,76 @@
         <div class="card-group text-black row">
           <div class="col">
             <div>
-              <div class="card text-center" style="width: 18rem;">
-                <img class="rounded-circle" src="img/kitty-1.png" alt="" />
+              <div class="card text-center py-2" style="width: 18rem;">
+                <img class="rounded-circle border mx-5 my-3" src="img/kitty-1.png" alt="" />
                 <h3 class="card-title">Tuna</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
                 </p>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <nav class="nav justify-content-center">
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-instagram"></i></a>
+                </nav>
               </div>
             </div>
           </div>
 
           <div class="col">
             <div>
-              <div class="card text-center" style="width: 18rem;">
-                <img class="rounded-circle" src="img/kitty-2.png" alt="" />
+              <div class="card text-center py-2" style="width: 18rem;">
+                <img class="rounded-circle border mx-5 my-3" src="img/kitty-2.png" alt="" />
                 <h3 class="card-title">Koshka</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
                 </p>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <nav class="nav justify-content-center">
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-instagram"></i></a>
+                </nav>
               </div>
             </div>
           </div>
 
           <div class="col">
             <div>
-              <div class="card text-center" style="width: 18rem;">
-                <img class="rounded-circle" src="img/kitty-3.png" alt="" />
+              <div class="card text-center py-2" style="width: 18rem;">
+                <img class="rounded-circle border mx-5 my-3" src="img/kitty-3.png" alt="" />
                 <h3 class="card-title">Meo</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
                 </p>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <nav class="nav justify-content-center">
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-instagram"></i></a>
+                </nav>
               </div>
             </div>
           </div>
 
           <div class="col">
             <div>
-              <div class="card text-center" style="width: 18rem;">
-                <img class="rounded-circle" src="img/kitty-4.png" alt="" />
+              <div class="card text-center py-2" style="width: 18rem;">
+                <img class="rounded-circle border mx-5 my-3" src="img/kitty-4.png" alt="" />
                 <h3 class="card-title">Ziggy</h3>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
                 </p>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <nav class="nav justify-content-center">
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="nav-link text-dark"><i class="bi bi-instagram"></i></a>
+                </nav>
               </div>
             </div>
           </div>
@@ -313,11 +318,11 @@
     </section>
 
     <!-- Contact & Map -->
-    <section class="p-3">
+    <section class="py-5">
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>Contact Info</h2>
+            <h2 class="text-center">Contact Info</h2>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <span class="fw-bold">Main Location:</span> Danboru
@@ -346,8 +351,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-bg-dark p-3">
-      <div>
+    <footer class="text-bg-dark py-5">
+      <div class="text-center">
         <p>Copyright &copy; 2021 Academinyaa</p>
 
         <a href="#">
