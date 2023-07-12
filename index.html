@@ -15,31 +15,32 @@
     <title>Academinyaa</title>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- Navbar -->
     <!-- this is so we can make it responsive -->
-    <nav class="bg-dark">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="h1 text-decoration-none">Academinyaa</a>
+    <nav class="navbar bg-dark navbar-expand-sm fixed-top">
+      <div class="container-sm">
+        <a href="#" class="h1 text-decoration-none text-white my-3">Academinyaa</a>
 
         <button
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navmenu"
+          class="navbar-toggler"
         >
-          <span></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="navmenu">
+        <div id="navmenu" class="collapse navbar-collapse">
           <ul class="nav">
             <li class="nav-item">
-              <a href="#learn" class="nav-link">Learning Journey</a>
+              <a href="#learn" class="nav-link text-white">Learning Journey</a>
             </li>
             <li class="nav-item">
-              <a href="#questions" class="nav-link">Nyaa?</a>
+              <a href="#questions" class="nav-link text-white">Nyaa?</a>
             </li>
             <li class="nav-item">
-              <a href="#instructors" class="nav-link">Instructors</a>
+              <a href="#instructors" class="nav-link text-white">Instructors</a>
             </li>
           </ul>
         </div>
@@ -48,11 +49,11 @@
 
     <!-- Showcase -->
     <section class="text-bg-dark p-3">
-      <div class="container">
+      <div class="container-sm">
         <div class="row align-items-center">
           <div class="col-sm-7">
             <h1>Become a <span class="text-warning"> Cat </span></h1>
-            <p>
+            <p class=" my-3">
               Nap all day cat dog hate mouse eat string barf pillow no baths
               hate everything but kitty poochy. Sleep on keyboard toy mouse
               squeak roll over.
@@ -77,7 +78,7 @@
 
     <!-- Newsletter -->
     <section class="bg-warning text-white py-5">
-      <div class="container">
+      <div class="container-sm">
         <div class="row align-items-center">
           <h3 class="col">Sign Up For Our Mewsletter</h3>
 
@@ -90,8 +91,8 @@
     </section>
 
     <!-- Learn Sections -->
-    <section id="learn" class="py-5">
-      <div class="container">
+    <section id="learn" class="bg-white py-5">
+      <div class="container-sm">
         <div class="row align-items-center">
           <div class="col">
             <img src="img/cat.png" alt="" />
@@ -108,7 +109,7 @@
               quae similique laboriosam iste minus placeat odit velit quos,
               nulla architecto amet voluptates?
             </p>
-            <a href="#" class="bg-light text-dark rounded text-decoration-none p-2">
+            <a href="#" class="bg-light text-dark rounded text-decoration-none p-2 my-3">
               <i>></i> Read More
             </a>
           </div>
@@ -117,7 +118,7 @@
     </section>
 
     <section id="learn" class="text-bg-dark py-5">
-      <div class="container">
+      <div class="container-sm">
         <div class="row align-items-center">
           <div class="col">
             <h2>Meow All Night</h2>
@@ -143,9 +144,9 @@
     </section>
 
     <!-- Question Accordion -->
-    <section id="questions" class="py-5">
-      <div class="container">
-        <h2 class="text-center">Frequently Asked Questions</h2>
+    <section id="questions" class="bg-white py-5">
+      <div class="container-sm">
+        <h2 class="text-center py-3">Frequently Asked Questions</h2>
         <div class="accordion" id="questions">
           <!-- Item 1 -->
           <div class="accordion-item">
@@ -231,8 +232,8 @@
     </section>
 
     <section id="instructors" class="bg-warning text-white py-5">
-      <div class="container text-center">
-        <h2>Our Instructors</h2>
+      <div class="container-sm text-center">
+        <h2 class="py-3">Our Instructors</h2>
         <p>
           Our instructors all have 5+ years pooping on grasses while licking
           paws
@@ -318,8 +319,8 @@
     </section>
 
     <!-- Contact & Map -->
-    <section class="py-5">
-      <div class="container">
+    <section class="bg-white py-5">
+      <div class="container-sm">
         <div class="row">
           <div class="col">
             <h2 class="text-center">Contact Info</h2>
@@ -351,7 +352,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-bg-dark py-5">
+    <footer class="container-sm text-bg-dark py-5">
       <div class="text-center">
         <p>Copyright &copy; 2021 Academinyaa</p>
 
